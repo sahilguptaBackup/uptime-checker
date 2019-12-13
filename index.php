@@ -2,10 +2,11 @@
 require_once ('UptimeChecker.php');
 
 $uptime_checker = new UptimeChecker;
-$result = $uptime_checker->startTest($_GET['url']);
-if ($result) {
-    echo 'Up';
-}else {
-    echo 'Down';
-}
+$url = $_GET['url'] ?? 'https://www.google.com';
+$output = "$url is : ";
+$status = 'Down';
 
+if ($uptime_checker->startTest($url)) {
+    $status = 'Up';
+}
+echo $output . $status;

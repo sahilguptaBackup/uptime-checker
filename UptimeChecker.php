@@ -17,7 +17,7 @@ class UptimeChecker {
 
     private function executeCmd($url) {
         exec("curl -sSL -D - $url -o /dev/null", $output);
-        dd($output);
+        //dd($output);
         return $output;   
     }
 }
