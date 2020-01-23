@@ -129,6 +129,6 @@ substitutions:
     _DB_PORT: '5432'
     _DB_USERNAME: ''
     _DB_PASSWORD: ''
-    _CLOUD_RUN_SERVICE: 'wooks'
+    _CLOUD_RUN_SERVICE: 'master'
     _FIRESTORE_PROJECT_ID: ''
     _FIRESTORE_WEB_API_KEY: ''
