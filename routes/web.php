@@ -30,4 +30,3 @@ Route::get('/', function () {
 Route::get('/', 'UptimeCheckerController@list');
 
 Route::post('/uptime', 'UptimeCheckerController@save')->name('uptime.save');
-// Route::get('/get', 'InfoController@get');
