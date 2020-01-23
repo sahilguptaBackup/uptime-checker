@@ -1,8 +1,10 @@
 <?php
 
+namespace App\Components;
+
 class UptimeChecker
 {
-    public function startTest($url)
+    public function start($url)
     {
         $command_output = $this->executeCmd($url);
         return $this->hasSuccessStatus($command_output);
